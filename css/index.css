@@ -261,3 +261,104 @@ border: 1px solid #22C55E;
 .daily-buttons{
   align-self: center;
 }
+.daily-buttons input{
+  font-size: 20px;
+}
+.leaderboard {
+  padding: 10px;
+}
+.leaderboard-block {
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  background-color: #080a14;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.leaderboard-title-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.leaderboard-image {
+  height: 32px;
+  width: 32px;
+    filter:  
+    brightness(0)
+    saturate(100%)
+    invert(35%)
+    sepia(98%)
+    saturate(1600%)
+    hue-rotate(240deg)
+    brightness(95%)
+    drop-shadow(1px 1px 5px #b56cfa);
+}
+.leaderboard-title {
+  color: #b56cfa;
+  text-shadow: 2px 2px 10px #b56cfa;
+}
+.leaderboard-buttons{
+  margin-left: auto;
+}
+.leaderboard-button {
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 16px;
+}
+.leaderboard-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+.leaderboard-header,
+.leaderboard-row{
+display: grid;
+grid-template-columns: 50px 2fr 1fr 2fr 1fr 1fr;
+
+}
+.leaderboard-row{
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background-color:rgba(51, 51, 51, 0.15);
+}
+.cell{
+  color: white;
+}
+.nickname{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nickname img{
+width: 32px;
+height: 32px;
+border: 1px solid gray;
+box-shadow: 0 0 5px gray,inset 0 0 10px gray;
+border-radius: 50%;
+padding: 1px;
+}
+.rank-1{
+  background-color: rgba(255, 215, 0,0.3);
+  border: 1px solid gold;
+  box-shadow:0 0 5px gold,inset 0 0 5px gold ;
+}
+.rank-1 .nickname,
+.rank-1 .gamelevel,
+.rank-1 .gameclass,
+.rank-1 .gamepoints{
+  color: yellow;
+}
+.rank-1 .nickname img{
+  border: 1px solid yellow;
+box-shadow: 0 0 5px gold,inset 0 0 10px gold;
+}
+.rank-2{
+
+}
+.rank-3{
+
+}
