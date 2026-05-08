@@ -203,6 +203,9 @@ border: 1px solid #22C55E;
   grid-template-columns: repeat(6,1fr);
   gap: 20px;
 }
+.shop-cards .card-image{
+  transform: translateX(0%);
+}
 .daily{
   padding: 10px;
 }
@@ -245,24 +248,39 @@ border: 1px solid #22C55E;
 }
 .daily-card{
   align-items: center;
-  box-shadow: inset 0 0 5px #b56cfa;
-}
-.daily-card img{
-  transform: none;
-  filter: drop-shadow(1px 1px 10px red); 
-}
-.daily-card span{
-  color: #b56cfa;
-  text-shadow: 2px 2px 10px #b56cfa;
 }
 .daily-card .card-description{
   font-size: 24px;
+}
+.card-day-title{
+  padding-bottom: 1px;
 }
 .daily-buttons{
   align-self: center;
 }
 .daily-buttons input{
   font-size: 20px;
+}
+.done-image{
+  width: 24px;
+  height: 24px;
+}
+.card-down-block{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.card-down-block img{
+filter:
+brightness(0)
+saturate(100%)
+invert(63%)
+sepia(79%)
+saturate(470%)
+hue-rotate(85deg)
+brightness(95%)
+contrast(95%);
 }
 .leaderboard {
   padding: 10px;
@@ -327,6 +345,7 @@ grid-template-columns: 50px 2fr 1fr 2fr 1fr 1fr;
 }
 .cell{
   color: white;
+  font-family: Inter-Regular;
 }
 .nickname{
   display: flex;
@@ -336,29 +355,58 @@ grid-template-columns: 50px 2fr 1fr 2fr 1fr 1fr;
 .nickname img{
 width: 32px;
 height: 32px;
-border: 1px solid gray;
-box-shadow: 0 0 5px gray,inset 0 0 10px gray;
+border: 1px solid rgb(42, 94, 136);
+box-shadow: 0 0 5px rgb(42, 94, 136),inset 0 0 10px rgb(42, 94, 136);
 border-radius: 50%;
 padding: 1px;
 }
 .rank-1{
-  background-color: rgba(255, 215, 0,0.3);
+  background-color: rgba(255, 215, 0,0.5);
   border: 1px solid gold;
   box-shadow:0 0 5px gold,inset 0 0 5px gold ;
-}
-.rank-1 .nickname,
-.rank-1 .gamelevel,
-.rank-1 .gameclass,
-.rank-1 .gamepoints{
-  color: yellow;
 }
 .rank-1 .nickname img{
   border: 1px solid yellow;
 box-shadow: 0 0 5px gold,inset 0 0 10px gold;
 }
+.rank-1 .rank{
+  font-family: Inter-Bold;
+}
 .rank-2{
-
+background-color: rgba(128, 128, 128,1);
+border: 1px solid rgb(173, 173, 173);
+box-shadow:0 0 5px rgb(218, 218, 218),inset 0 0 5px rgb(218, 218, 218) ;
+}
+.rank-2 .nickname img{
+  border: 1px solid white;
+box-shadow: 0 0 5px white,inset 0 0 10px white;
+}
+.rank-2 .rank{
+  font-family: Inter-Bold;
 }
 .rank-3{
+background-color: rgba(205, 127, 50, 0.4);
+border: 1px solid rgb(205, 127, 50);
+box-shadow:0 0 5px rgb(205, 127, 50),inset 0 0 5px rgb(205, 127, 50) ;
+}
+.rank-3 .nickname img{
+  border: 1px solid rgb(205, 127, 50);
+box-shadow: 0 0 5px rgb(205, 127, 50),inset 0 0 10px rgb(205, 127, 50);
+}
+.rank-3 .rank{
+  font-family: Inter-Bold;
+}
+.pc-button-filled:hover,
+.pc-button-empty:hover {
+    transform: translateY(-2px);
 
+    box-shadow:
+        0 0 20px #22C55E;
+}
+.leaderboard-row {
+    transition:
+        transform .3s ease;
+}
+.leaderboard-row:hover {
+    transform: scale(1.01);
 }

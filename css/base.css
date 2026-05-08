@@ -81,11 +81,9 @@ border: 1px solid #7C3AED;
   background-color: #111827;
 }
 .card-image{
-  transform: translateX(50%);
-  width: 50%;
-  height: auto;
-  filter: drop-shadow(1px 1px 10px gold);
-  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 .card-title{
   color: white;
@@ -146,4 +144,72 @@ width: 32px;
   color: white;
   font-size: 24px;
   font-family: Inter-Regular;
+}
+.active{
+  box-shadow: inset 0 0 5px #b56cfa;
+  
+}
+.active span{
+  color: #b56cfa;
+}
+.completed{
+  background: rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 5px rgba(34, 197, 94,0.5);
+  
+}
+.completed .card-description,
+.completed .card-day-title,
+.completed .card-title
+{
+  color: rgba(34, 197, 94,0.5);
+}
+.completed .daily-status
+{
+  color: rgba(34, 197, 94,1);
+}
+.hide{
+  display: none;
+}
+.button-filled,
+.button-empty {
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+.button-filled:hover,
+.button-empty:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(181, 108, 250, .25);
+}
+.card{
+      transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.4),
+        0 0 25px rgba(181,108,250,.2);
+}
+.header-link,
+.footer-column a {
+    position: relative;
+
+    transition:
+        transform .2s ease
+        color .2s ease,
+        text-shadow .2s ease;
+}
+.header-link:hover,
+.footer-column a:hover{
+
+    text-shadow:
+        0 0 10px rgba(181,108,250,0.8),
+        0 0 20px rgba(181,108,250,0.4);
 }
