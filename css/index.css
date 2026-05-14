@@ -399,8 +399,7 @@ box-shadow: 0 0 5px rgb(205, 127, 50),inset 0 0 10px rgb(205, 127, 50);
         0 0 20px #22C55E;
 }
 .leaderboard-row {
-    transition:
-        transform .3s ease;
+    transition: 0.3s ease;
 }
 .leaderboard-row:hover {
     transform: scale(1.01);
