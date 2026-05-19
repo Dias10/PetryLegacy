@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/forum.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>PetryLegacy - Форум</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="header-brand" href="#">
+                <img class="header-logo" src="/images/logo.png" alt="logotype">
+                <div class="header-title">PetryLegacy</div>
+            </a>
+            <nav class="header-menu">
+                <a class="header-link" href="./index.html">Главная</a>
+                <a class="header-link" href="./shop.html">Магазин</a>
+                <a class="header-link" href="./forum.html">Форум</a>
+                <a class="header-link" href="./mobile.html">Мобильное</a>
+                <a class="header-link" href="./desktop.html">ПК</a>
+                <a class="header-link" href="./support.html">Поддержка</a>
+                <a class="header-link" href="./guide.html">База знаний</a>
+            </nav>
+            <div class="header-buttons">
+                <input class="button-empty" type="button" value="Войти">
+                <input class="button-filled" type="button" value="Регистрация">
+            </div>
+        </header>
+
+
+        <section class="hero">
+            <div class="hero-title-block">
+                <h1 class="hero-title">Форум</h1>
+                <span class="hero-description">Общайтесь, делитесь опытом и находите новых друзей в мире
+                    PetryLegacy!</span>
+                <div class="search-block">
+                    <input type="text" placeholder="Поиск по форуму...">
+                    <a href="#"><img class="hero-search-image" src="images/search.png" alt="search"></a>
+                </div>
+                <span class="hero-banner-description">Главная > Форум</span>
+            </div>
+            <div class="hero-banner">
+                <div class="hero-banner-block">
+                    <div class="hero-banner-vertical">
+                        <span class="hero-banner-title">Присоединяйся к сообществу!</span>
+                        <span class="hero-banner-description">Зарегистрируйтесь чтобы создавать темы,
+                            отвечать на сообщения и общаться с другими игроками.
+                        </span>
+                        <div>
+                            <input class="button-filled" type="button" value="Создать аккаунт">
+                        </div>
+                    </div>
+                    <img class="hero-banner-image" src="images/flag.png" alt="banner">
+                </div>
+            </div>
+        </section>
+
+        <main class="main">
+            <section class="left-content">
+                <aside class="categories">
+                    <div class="category"> 
+                        <img src="images/tile.png" alt="">
+                        <span class="category-title">Все разделы</span>
+                        <span class="category-counter">12</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/news.png" alt="">
+                        <span class="category-title">Новости</span>
+                        <span class="category-counter">3</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/chat.png" alt="">
+                        <span class="category-title">Обсуждение игры</span>
+                        <span class="category-counter">4</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/guide.png" alt="">
+                        <span class="category-title">Гайды и советы</span>
+                        <span class="category-counter">8</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/support.png" alt="">
+                        <span class="category-title">Техническая поддержка</span>
+                        <span class="category-counter">5</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/idea.png" alt="">
+                        <span class="category-title">Предложения</span>
+                        <span class="category-counter">2</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/group.png" alt="">
+                        <span class="category-title">Поиск группы</span>
+                        <span class="category-counter">3</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/reverse.png" alt="">
+                        <span class="category-title">Флудилка</span>
+                        <span class="category-counter">7</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/trade.png" alt="">
+                        <span class="category-title">Торговля</span>
+                        <span class="category-counter">6</span>
+                    </div>
+                    <div class="category"> 
+                        <img src="images/archive.png" alt="">
+                        <span class="category-title">Архив</span>
+                        <span class="category-counter">1</span>
+                    </div>
+                    <div class="category-button">
+                        <input class="button-filled" type="button" value="Создать тему" style="font-family: Inter-Regular;">
+                    </div>
+                </aside>
+                <aside class="rules">
+                    <span class="rules-title">Правила форума</span>
+                    <span class="rules-description">Перед публикацией ознакомьтесь с правилами нашего сообщества.</span>
+                    <div class="rules-button">
+                        <a href="#">
+                            <span class="rules-button-title">Читать правила</span>
+                        </a>
+                        <a href="#">
+                            <img class="rules-image" src="images/right-arrow.png" alt="right-arrow">
+                        </a>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="content">
+                <div class="content-block">
+                    <div class="content-navigation">
+                    <span>Последние темы</span>
+                    <span>Популярные темы</span>
+                    <span>Без ответов</span>
+                    <div class="content-navigation-sort" custom-select>
+                        <div class="first-selector"></div>
+                        <div class="another-selector"></div>
+                    </div>
+                </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                    <div class="content-theme">
+                        <img class="content-theme-image" src="images/avatar.png" alt="">
+                        <div class="content-theme-title-block">
+                            <span class="content-theme-title">Обновление 1.2.0 - Новый контент и изменения</span>
+                            <span class="content-theme-category">Новости</span>
+                            <span class="content-theme-author">Автор: Admin</span>
+                        </div>
+                        <div class="content-theme-comments">
+                                <img class="content-theme-comment-image" src="images/chat.png" alt="">
+                                <span class="content-theme-comment-count">12</span>
+                                <span class="content-theme-comment-down">ответов</span>
+                        </div>
+                        <div class="content-theme-views">
+                                <img class="content-theme-views-top-image" src="images/chat.png" alt="">
+                                <span class="content-theme-views-top-count">1.2K</span>
+                                <span class="content-theme-views-down">просмотров</span>
+                        </div>
+                        <div class="content-theme-profile">
+                            <img class="content-theme-profile-image" src="images/avatar.png" alt="">
+                            <span>Сегодня 12:45</span>
+                            <span>DarkKnight</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="right-content">
+
+                <aside class="online-players">
+                        <div class="online-title-block">
+                            <span class="online-title">Пользователи онлайн</span>
+                            <div class="online-ball"></div>
+                            <span class="online-description">128 онлайн</span>
+                        </div>
+                        <div class="players-block">
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="online-player">
+                                <a href="#">
+                                    <img class="online-player-image" src="images/avatar.png" alt="profile">
+                                </a>
+                            </div>
+                            <div class="last-player">
+                                <a href="#">
+                                    <div class="last-player-image">
+                                        <span class="last-player-count">99+</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> 
+                        <div class="online-players-button">
+                            <a href="#">
+                                <span class="online-players-button-title">Показать всех</span>
+                            </a>
+                        </div>
+                </aside>
+                <aside class="last-themes">
+                    <div class="last-themes-block">
+                        <span class="last-themes-title">Последние темы</span>
+                        <div class="theme-mini">
+                            <img class="theme-mini-image" src="images/avatar.png" alt="">
+                            <div class="theme-mini-description">
+                                <a href="#">
+                                    <span class="theme-mini-title">Обновление 1.2.0 - Новый контент и изменения</span>  
+                                </a>
+                                <div class="theme-mini-data">
+                                    <span class="theme-mini-category">Новости</span>
+                                    <span class="theme-mini-date">Сегодня 12:45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="theme-mini">
+                            <img class="theme-mini-image" src="images/avatar.png" alt="">
+                            <div class="theme-mini-description">
+                                <a href="#">
+                                    <span class="theme-mini-title">Как быстро прокачаться на старте ?</span>  
+                                </a>
+                                <div class="theme-mini-data">
+                                    <span class="theme-mini-category">Обсуждение игры</span>
+                                    <span class="theme-mini-date">Сегодня 11:30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="theme-mini">
+                            <img class="theme-mini-image" src="images/avatar.png" alt="">
+                            <div class="theme-mini-description">
+                                <a href="#">
+                                    <span class="theme-mini-title">Гайд по лучшему снаряжению для мага</span>  
+                                </a>
+                                <div class="theme-mini-data">
+                                    <span class="theme-mini-category">Гайды и советы</span>
+                                    <span class="theme-mini-date">Вчера 23:10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="theme-mini">
+                            <img class="theme-mini-image" src="images/avatar.png" alt="">
+                            <div class="theme-mini-description">
+                                <a href="#">
+                                    <span class="theme-mini-title">Не запускается игра. Черный экран</span>  
+                                </a>
+                                <div class="theme-mini-data">
+                                    <span class="theme-mini-category">Техническая поддержка</span>
+                                    <span class="theme-mini-date">Вчера 20:33</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="theme-mini">
+                            <img class="theme-mini-image" src="images/avatar.png" alt="">
+                            <div class="theme-mini-description">
+                                <a href="#">
+                                    <span class="theme-mini-title">Предложение: Добавить новую локацию</span>  
+                                </a>
+                                <div class="theme-mini-data">
+                                    <span class="theme-mini-category">Предложения</span>
+                                    <span class="theme-mini-date">Вчера 18:05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="premium-banner">
+                    <span class="premium-banner-title">Премиум - подписка</span>
+                    <span class="premium-banner-description">Поддержите проект и получайте уникальные бонусы каждый день!</span>
+                    <div class="premium-banner-button">
+                        <input class="button-filled" type="button" value="Подробнее">  
+                    </div>
+                </aside>
+
+            </section>
+
+        </main>
+
+
+        <footer class="another-footer">
+            <span>PetryLegacy &copy 2026. Все права защищены.</span>
+            <span>Пользовательское соглашение</span>
+            <span>Политика конфиденциальности</span>
+            <div class="footer-social">
+                <a href="#">
+                    <img src="images/vk.png" alt="VK">
+                </a>
+                <a href="#">
+                    <img src="images/telegram.png" alt="Telegram">
+                </a>
+                <a href="#">
+                    <img src="images/whatsapp.png" alt="Whatsapp">
+                </a>
+                <a href="#">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
