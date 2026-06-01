@@ -62,6 +62,7 @@ color: white;
 font-family: Inter-Medium;
 }
 .button-empty{
+cursor: pointer;
 border-radius: 6px;
 color: white;
 padding:  10px 20px;
@@ -69,6 +70,7 @@ background-color: rgba(10, 15, 27, 0.3);
 border: 1px solid #7C3AED;
 }
 .button-filled{
+  cursor: pointer;
   border-radius: 6px;
   padding: 10px 20px;
   color: white;
